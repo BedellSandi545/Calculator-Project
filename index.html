@@ -22,7 +22,13 @@
 		<div class="wrapper">
 			<div class="preview">
 				<input type="text" class="first-input" id="first-input" />
-				<input type="text" class="second-input" id="second-input" />
+				<input
+					type="text"
+					class="second-input"
+					id="second-input"
+					value="0"
+					disabled
+				/>
 			</div>
 
 			<div class="second-section">
@@ -30,28 +36,39 @@
 				<i class="fa-solid fa-arrow-left" id="delete"></i>
 			</div>
 
+			<div class="modal">
+				<div class="title">
+					<div
+						><i class="fa-regular fa-clock"></i>
+						<h3>Recents</h3>
+					</div>
+					<div><h5> Clear All </h5></div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+
 			<div class="keyboard">
 				<div class="clearall"> C </div>
-				<div class="parenthesis"> () </div>
-				<div class="modulus"> % </div>
-				<div class="division"> / </div>
-				<div class="seven"> 7 </div>
-				<div class="eight"> 8 </div>
-				<div class="nine"> 9 </div>
-				<div class="multiplication"> * </div>
+				<div class="parenthesis" data-value="()"> () </div>
+				<div class="modulus" data-value="%"> % </div>
+				<div class="division" data-value="/"> / </div>
+				<div class="seven" data-value="7"> 7 </div>
+				<div class="eight" data-value="8"> 8 </div>
+				<div class="nine" data-value="9"> 9 </div>
+				<div class="multiplication" data-value="*"> * </div>
 
-				<div class="four"> 4 </div>
-				<div class="five"> 5 </div>
-				<div class="six">6</div>
-				<div class="addition">+</div>
-				<div class="one">1</div>
-				<div class="two">2</div>
-				<div class="three">3</div>
-				<div class="subtraction">-</div>
-				<div class="plus-or-minus">+/-</div>
-				<div class="zero">0</div>
-				<div class="decimal">.</div>
-				<div class="equals">=</div>
+				<div class="four" data-value="4"> 4 </div>
+				<div class="five" data-value="5"> 5 </div>
+				<div class="six" data-value="6">6</div>
+				<div class="addition" data-value="+">+</div>
+				<div class="one" data-value="1">1</div>
+				<div class="two" data-value="2">2</div>
+				<div class="three" data-value="3">3</div>
+				<div class="subtraction" data-value="-">-</div>
+				<div class="plus-or-minus" data-value="+/-">+/-</div>
+				<div class="zero" data-value="0">0</div>
+				<div class="decimal" data-value=".">.</div>
+				<div class="equals" data-value="=">=</div>
 			</div>
 		</div>
 	</body>
