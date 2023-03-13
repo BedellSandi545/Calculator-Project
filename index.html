@@ -8,8 +8,51 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Calculator Project</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./styles.css" />
 		<script src="./script.js"></script>
 	</head>
-	<body> </body>
+	<body>
+		<div class="wrapper">
+			<div class="preview">
+				<input type="text" class="first-input" id="first-input" />
+				<input type="text" class="second-input" id="second-input" />
+			</div>
+
+			<div class="second-section">
+				<i class="fa-regular fa-clock" id="recent"></i>
+				<i class="fa-solid fa-arrow-left" id="delete"></i>
+			</div>
+
+			<div class="keyboard">
+				<div class="clearall"> C </div>
+				<div class="parenthesis"> () </div>
+				<div class="modulus"> % </div>
+				<div class="division"> / </div>
+				<div class="seven"> 7 </div>
+				<div class="eight"> 8 </div>
+				<div class="nine"> 9 </div>
+				<div class="multiplication"> * </div>
+
+				<div class="four"> 4 </div>
+				<div class="five"> 5 </div>
+				<div class="six">6</div>
+				<div class="addition">+</div>
+				<div class="one">1</div>
+				<div class="two">2</div>
+				<div class="three">3</div>
+				<div class="subtraction">-</div>
+				<div class="plus-or-minus">+/-</div>
+				<div class="zero">0</div>
+				<div class="decimal">.</div>
+				<div class="equals">=</div>
+			</div>
+		</div>
+	</body>
 </html>
