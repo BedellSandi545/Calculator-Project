@@ -4,8 +4,10 @@ const secondInput = document.querySelector('#second-input');
 const deleteBtn = document.querySelector('#delete');
 const equals = document.querySelector('.equals');
 
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const title = document.querySelector('.title');
 let concat = '';
-
 function clickKeys(e) {
 	e.preventDefault();
 	if (
@@ -53,7 +55,7 @@ function clickKeys(e) {
 	if (e.target.classList.contains('cancelall')) {
 		firstInput.value = '';
 		concat = '';
-		secondInput.value = '';
+		secondInput.value = 0;
 	}
 
 	defaultSecondInput();
@@ -66,10 +68,14 @@ function defaultSecondInput() {
 }
 function equalsFunc(e) {
 	e.preventDefault();
-	parseInt(firstInput.value);
-	secondInput.value = eval(firstInput.value);
-	firstInput.value = secondInput.value;
-	secondInput.value = 0;
+
+	if (firstInput.value !== '') {
+		parseInt(firstInput.value);
+
+		secondInput.value = eval(firstInput.value);
+		firstInput.value = secondInput.value;
+		secondInput.value = 0;
+	}
 }
 
 equals.addEventListener('click', equalsFunc);
